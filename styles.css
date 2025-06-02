@@ -95,12 +95,11 @@ nav {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh; /* Use min-height for flexibility */
-    background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(44, 62, 80, 0.65)), /* Slightly lighter overlay */
+    height: 100vh;
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)),
                 url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax effect */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,19 +109,18 @@ nav {
 }
 
 .hero-content h2 {
-    font-size: 3.5rem; /* Increased from 3rem */
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.5); /* Enhanced text shadow */
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-    font-size: 1.4rem; /* Increased from 1.2rem */
+    font-size: 1.4rem;
     margin-bottom: 2rem;
-    max-width: 600px; /* Limit width for better readability */
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    color: var(--white);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
