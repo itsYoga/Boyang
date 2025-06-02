@@ -1,51 +1,27 @@
-# 博揚藥局 (Boyang Pharmacy) Website
+# 博揚 | Boyang
 
-This is the official website for 博揚藥局 (Boyang Pharmacy).
+## 關於我們 | About Us
+博揚是一家專業的藥局，提供優質的藥事服務和健康諮詢。我們擁有經驗豐富的藥師團隊，致力於為您的健康把關。
 
-## Files Structure
-```
-/
-├── index.html      # Main website file
-├── styles.css      # Stylesheet
-├── script.js       # JavaScript functionality
-└── README.md       # This file
-```
+## 門市資訊 | Store Information
 
-## Deployment Instructions
+### 景美店
+- 地址：台北市文山區景興路181號
+- 電話：02-8932-1707
+- 營業時間：10:00-22:00
 
-### Option 1: GitHub Pages (Free)
-1. Create a GitHub account if you don't have one
-2. Create a new repository named `boyang-pharmacy`
-3. Upload all files to the repository
-4. Go to repository Settings > Pages
-5. Select the main branch as source
-6. Your site will be published at `https://[your-username].github.io/boyang-pharmacy`
+### 信義店
+- 地址：台北市信義區吳興街247號
+- 電話：02-2722-2236
 
-### Option 2: Netlify (Free)
-1. Create a Netlify account
-2. Click "New site from Git"
-3. Connect your GitHub repository or drag and drop your website folder
-4. Your site will be published immediately
-5. You can then connect your custom domain (boyang.com)
+## 服務項目 | Services
+- 處方藥調劑
+- 健康諮詢
+- 保健用品
+- 慢性病管理
 
-### Option 3: Traditional Web Hosting
-1. Purchase hosting from a provider (e.g., Bluehost, HostGator)
-2. Access your hosting control panel
-3. Use File Manager or FTP to upload all files to the public_html directory
-4. Configure your domain DNS settings to point to your hosting
+## 線上購物 | Online Shopping
+- [蝦皮商城](https://shopee.tw/oikpn6fpix)
 
-## Domain Setup
-1. Purchase the domain boyang.com from a domain registrar
-2. Configure DNS settings:
-   - Add an A record pointing to your hosting IP
-   - Or add CNAME records if using GitHub Pages/Netlify
-3. Wait for DNS propagation (can take 24-48 hours)
-
-## Maintenance
-- Keep all files updated
-- Regularly backup your website
-- Monitor website performance
-- Update content as needed
-
-## Contact
-For website support or updates, please contact your web developer. 
+## 聯絡我們 | Contact Us
+如有任何問題，歡迎來電或親臨門市諮詢。 
