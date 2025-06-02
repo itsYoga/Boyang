@@ -63,3 +63,61 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+    }
+
+    if (mobileMenuClose) {
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    }
+
+    // Business hours toggle
+    const hoursToggles = document.querySelectorAll('.hours-toggle');
+    
+    hoursToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const hoursDetails = toggle.nextElementSibling;
+            const isActive = toggle.classList.contains('active');
+            
+            // Toggle current section
+            toggle.classList.toggle('active');
+            hoursDetails.classList.toggle('active');
+            
+            // Close other sections
+            hoursToggles.forEach(otherToggle => {
+                if (otherToggle !== toggle) {
+                    otherToggle.classList.remove('active');
+                    otherToggle.nextElementSibling.classList.remove('active');
+                }
+            });
+        });
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+});
